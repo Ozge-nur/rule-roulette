@@ -1,8 +1,8 @@
-# 🌟 Yıldız Avcısı (SQL Sürümü)
+# 🌟 Yıldız Avcısı 
 
 Yıldızları topladıkça Yapay Zeka'nın size anlık yasaklar koyduğu, SQL veritabanı destekli, sınırları zorlayan refleks ve bulmaca oyunudur.
 
-## 🎮 Nasıl Oynanır?
+##  Nasıl Oynanır?
 *   **Amaç:** Haritadaki Yıldızları (🌟) toplayarak skoru artırmak. Hareket etmek için **WASD** veya **Ok Tuşlarını** kullanın.
 *   **Yapay Zeka Kuralları:** Her yıldız aldığınızda ekrana süreli bir yasak gelir (Örn: Sola gitmek yasak). Yasağı delerseniz **2 saniye donma cezası** yersiniz.
 *   **Bombalar:** Skor arttıkça haritada ölümcül bombalar (💣) belirir. Bastığınız an ölürsünüz ve skorunuz SQL veritabanına kaydedilir.
@@ -10,7 +10,7 @@ Yıldızları topladıkça Yapay Zeka'nın size anlık yasaklar koyduğu, SQL ve
 
 ---
 
-## 🛠️ Sistem Mimarisi (Backend & Veritabanı)
+##  Sistem Mimarisi (Backend & Veritabanı)
 
 Bu proje, oyuncu verilerini güvenli ve kalıcı bir şekilde saklamak için gerçek bir Backend (Sunucu) ve SQL İlişkisel Veritabanı mimarisi üzerine kurulmuştur.
 
@@ -34,5 +34,6 @@ Oyunun sunucu tarafı (Backend) **Python Flask** framework'ü ile yazılmıştı
 *   `addAiRule()`: Skorla eşzamanlı zorluk seviyesini artırarak yapay zeka kurallarını zamanlayıcıya (Timer) ekler.
 *   `triggerError(msg)`: Asenkron (setTimeout) çalışarak kural ihlalinde thread'i kilitler (Cezalandırma sistemi).
 
-## 🚀 Oyunu Başlatma (Kurulum)
+## 
+Oyunu Başlatma (Kurulum)
 Sunucuyu ve SQL veritabanını başlatmak için klasördeki **`baslat.bat`** dosyasına iki kere tıklamanız yeterlidir. Gerekli Python sunucusu otomatik ayaklanacak ve oyunu `http://127.0.0.1:5000` adresinde tarayıcınızda açacaktır.
